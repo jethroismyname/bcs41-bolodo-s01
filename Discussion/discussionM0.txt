@@ -1,3 +1,128 @@
 Jethro Rey R. Bolodo
 BCS41
----
+--
+
+/*
+	For your Mini-Activity 1
+		- screenshot the folder/files tree structure of your created bcs41-<lastName> repo
+		- submit it in our GC 1T2223 - ADV Game Dev chatbox
+*/
+
+CLI Commands
+ - Command-Line Interface
+ 	- it is like a text-based tool that lets the user to communicate with your computer or software by typing specific words or instructions known as commands
+
+Advantages of using CLI commands:
+	- efficiency
+	- automation
+	-remote access
+	-resource efficiency
+	-reproducibility
+
+~ (tilde)
+	- a special character with specific meaning in various context, it represent home directory
+		example: cd ~
+
+MINGW64
+	- also known an "Minimalist GNU for Windows 64-bit"
+		- a development environment and runtime for creating native Windows application using the GNU Compiler Collection
+
+		-- GNU 
+			- it means GNU's Not Unix
+
+- Navigation
+	- cd : change directory
+		- it allows us to change the current folder we are working on
+			syntax: 
+				cd <folder/directories>
+			example:
+				cd Documents
+	- pwd: present working directory
+		- it allows us to identify the current folder we are working on
+			syntax:
+				pwd
+			example:
+				pwd
+	- ls: list
+		- it allows us to list all the files and folders
+			syntax:
+				ls
+			example:
+				ls
+- File Manipulation
+	- mkdir: make directory
+		- it allows us to create folder/directory
+			syntax: 
+				mkdir <folderName/directoryName>
+			example:
+				mkdir s01
+	- touch: create an empty file
+		- it allows us to create file
+			syntax: 
+				touch <fileName>
+			example:
+				touch discussion.txt
+
+subl . >> opens our sublime editor
+code . >> opens our VSCode editor
+
+Git VCS
+	- an open source version control system. It allows us to track and update our files with ONLY CHANGES MADE TO IT.
+
+SSH or Secure Shell Key
+	- tools we use to authenticate the uploading or of other tasks when manipulating or using git repositories
+	- it allows us to push/upload changes to out repos without the need for passwords
+
+Basic Git Commands
+	- git status
+		- used within the Git repo to display the current status of your working directory and staging area.
+	- git init
+		- git initialization
+			-- used to start a new repository
+	- git add .
+		- used in Git to stage (preparing for a commit) all changes in the current directory
+	- git commit -m "<commitMessage>"
+		- used in Git to record the changes you've staged(prepared to commit) into the version history of your repo
+		-- -m
+			- used to provide commit message that describes the purpose of the commit
+			- the commit message helps us to and the others understand the changes made in that commit
+
+Git Config
+	- these commands will allow us to have git recognize the person trying to push into an online/remote repo
+
+	- git config --global user.email "<emailUsedInGitHub>"
+
+		- configure the email used to push into the remote repo
+	- git config --global user.name "userNameUsedInGitHub"
+		- configure the name/username of the user trying to push into the remote repo
+
+	to verify
+		- git config --global --list
+		- git config --global --get user.email
+		- git config --global <emailUsedInGitHub>
+
+For pushing for the first time 
+	git init -> git status -> git add . -> git commit -m "commitMessage" -> git remote add <remoteAlias> -> git remote -v --> git push origin master/main
+
+For pushing with updates
+	git status -> git add . -> git commit -m "commitMessage" -> git remote -v --> git push origin master
+
+/*
+	Main activity (activity folder of session)
+
+	1. In the s01 folder, change the directory from discussion to activity folder and create a new file inside the activity folder and name it aboutMe.txt.
+	2. Peek at the states of the files/folders using git status.
+	3. Stage the files in preparation for creating a commit using git add.
+	4. Create a commit using git commit. 
+	Write the message "Initialize activity"
+	5. Write a brief story about yourself on google docs or word
+	6. Save your work
+	7. Check the commit history using git log/git log --oneline.
+	8. Add a paragraph that describes your motivation in joining the bootcamp.
+	9. Check the status of the files/folders, stage the files and create a commit.
+	10. Add a paragraph that briefly narrates your work experience.
+	11. Check the status of the files/folders, stage the files and create a commit again.
+	12. Connect to a remote repository using git remote add origin.
+	13. Upload your changes to the GitLab project by doing git push origin master.
+	14. Add the link and screen shot the GitHub.
+*/
